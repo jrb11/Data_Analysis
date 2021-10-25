@@ -1,0 +1,33 @@
+**************
+ read_xml.py
+**************
+
+import xml.etree.cElementTree as ET
+tree = ET.ElementTree(file='data.xml')
+
+root = tree.getroot()
+
+for books in root:
+    if books.tag == 'book':
+        print('Books ID: ' +books.get('id'))
+        
+        for details in books:
+            if details.tag == 'author' or details.tag == 'title' or details.tag == 'price' or details.tag == 'publish_date':
+                print(details.text)
+        print('---------------------')
+
+SAMPLE OUTPUT:
+
+Books ID: bk101
+Gambardella, Matthew
+XML Developer's Guide
+44.95
+2000-10-01
+---------------------
+
+import data.xml from https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85)
+
+
+
+
+
