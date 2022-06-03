@@ -13,7 +13,7 @@ df.head()
 4	swift	maruti suzuki	2014	4.60	6.87	42450	Diesel	Dealer	Manual	0
 
 final_dataset = df[['company', 'Year', 'Selling_Price', 'Present_Price',
-       'Kms_Driven', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']]
+       'Kms_Driven', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']] 
 final_dataset.head()
 
 company	Year	Selling_Price	Present_Price	Kms_Driven	Fuel_Type	Seller_Type	Transmission	Owner
