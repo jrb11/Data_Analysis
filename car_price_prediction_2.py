@@ -58,6 +58,7 @@ dataset.head()
 # For Seller_Type
 dataset.replace({'Seller_Type':{'Dealer':0, 'Individual':1}}, inplace=True)
 
+#Rerive First 5 Entry
 dataset.head()
 
 # For Transmission
